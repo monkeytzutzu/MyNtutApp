@@ -25,6 +25,7 @@
         // Play audio
         //
         function playAudio(src) {
+              if (my_media == null) //疑哼？
             // Create Media object from src
             my_media = new Media(src, onSuccess, onError);
 
@@ -91,10 +92,28 @@
 
         </script>
       </head>
-      <body>
-        <a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
-        <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
-        <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
+      <body style="background-color:#C3814B;">
+<table width="100%" height ="100%" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td align="center" valign="middle">
+         
+         <div style="background-color:#EEEDCD;padding:10px;margin-bottom:5px;">
+             <p></p>
+             <font face="AmericanTypewriter" size="7" color="gray">Let's dance</font>
+             <p></p></div>
+           <p></p>
+         <a href="#" class="btn large" onclick="playAudio('http://s15.youmaker.com/other/2010/7-13/mp385420138555c90fa377544ae5b39e1cbd75e69ae0001.mp3');"><div style = "width:150px;height:60px;background-color:#4D3519;;border:5px #DACC90 solid;border-radius:50px;">
+             <p></p><font face="Optima" size="5" color="white">Play Audio</font>
+         </div>
+</a>
+          <p></p>
+         <a href="#" class="btn large" onclick="pauseAudio();"><div style = "width:250px;height:60px;background-color:#DACC90;;border:5px #4D3519 solid;border-radius:50px;">
+             <p></p><font face="Optima" size="5" color="white">Pause Playing Audio</font></div>
+         </a>
+          <p></p>
+          <a href="#" class="btn large" onclick="stopAudio();"><div style = "width:250px;height:60px;background-color:#4D3519;;border:5px #DACC90 solid;border-radius:50px;">
+              <p></p><font face="Optima" size="5" color="white">Stop Playing Audio</font></div>
+        </a>
         <p id="audio_position"></p>
       </body>
     </html>
