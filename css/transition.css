@@ -2,11 +2,11 @@
 /* CSS Document - By Away
 	http://www.dfuns.idv.tw */
 
-.box{ margin:auto; letter-spacing:1px; width:300px; background:#F00; border-radius:30px; font-size:75px; color:#FFF; text-align:center; line-height:300px;
+.box{ margin:auto; letter-spacing:1px; width:100%; background:#DACC90; border-radius:0px; font-size:18px; color:#AC9939; text-align:center; line-height:35px;
     transition: background 2s ease;
     -moz-transition: background 2s ease;
     -webkit-transition: background 2s ease;
     -ms-transition: background 2s ease;
     -o-webkit-transition: background 2s ease;}
 
-.box:hover{ background:#03C;}
+.box:hover{ background:#4D3519;}
